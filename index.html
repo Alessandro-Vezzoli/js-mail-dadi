@@ -10,15 +10,35 @@
     <title>js-mail-dadi</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>  </head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <div class="container">
+      <h1 class="text-center mt-5">ACCEDI PER ENTRARE</h1>
+      <div class="card mt-5">
+        <form class="m-5">
+          <div class="row">
+            <div class="mb-3 col-4 text-center"></div>
+            <div class="mb-3 col-4 text-center">
+              <label for="email" class="form-label">EMAIL</label>
+              <input type="email" class="form-control" id="emailForm" />
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center mt-5">
+            <button id="start" class="btn btn-primary me-2">ACCEDI</button>
+            <button id="reset" class="btn btn-outline-danger">ANNULLA</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container d-none" id="resultContainer">
+      <h1 class="text-center m-5" id="result"></h1>
+    </div>
 
     <script src="./assets/js/main.js" async defer></script>
   </body>
